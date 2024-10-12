@@ -224,47 +224,47 @@
             </div>
             <div class="col-md-4">
                 <div class="container">
-                    <table style="width: 100%;">
+                    <table style="width: 100%; border-collapse: collapse; border: 2px solid black;">
                         <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>LDL (mg/dl)</th>
-                            <th>Total Cholesterol (mg/dl)</th>
-                        </tr>
+                          <tr>
+                            <th style="border: 2px solid black; padding: 15px; background-color: #444; color: #fff;">Category</th>
+                            <th style="border: 2px solid black; padding: 15px; background-color: #444; color: #fff;">LDL (mg/dl)</th>
+                            <th style="border: 2px solid black; padding: 15px; background-color: #444; color: #fff;">Total Cholesterol (mg/dl)</th>
+                          </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>Optimal</td>
-                            <td>&lt;100</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Desirable</td>
-                            <td></td>
-                            <td>&lt;200</td>
-                        </tr>
-                        <tr>
-                            <td>Near optimal/above optimal</td>
-                            <td>100-129</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Borderline High</td>
+                          <tr>
+                            <td >Optimal</td>
+                            <td >&lt;100</td>
+                            <td ></td>
+                          </tr>
+                          <tr>
+                            <td >Desirable</td>
+                            <td ></td>
+                            <td >&lt;200</td>
+                          </tr>
+                          <tr>
+                            <td >Near optimal/above optimal</td>
+                            <td >100-129</td>
+                            <td ></td>
+                          </tr>
+                          <tr>
+                            <td >Borderline High</td>
                             <td>130-159</td>
-                            <td>200-239</td>
-                        </tr>
-                        <tr>
+                            <td >200-239</td>
+                          </tr>
+                          <tr>
                             <td>High</td>
-                            <td>160-189</td>
-                            <td>&gt;240</td>
-                        </tr>
-                        <tr>
-                            <td>Very High</td>
+                            <td >160-189</td>
+                            <td >&gt;240</td>
+                          </tr>
+                          <tr>
+                            <td >Very High</td>
                             <td>&gt;190</td>
-                            <td></td>
-                        </tr>
+                            <td ></td>
+                          </tr>
                         </tbody>
-                    </table>
+                      </table>
                     <br>
                     <h6 class=" font-bold" style="text-align: center;" >TABLE 1: TOTAL CHOLESTROL REFRENCE VALUES</h6>
                 </div>
@@ -277,44 +277,33 @@
             </div>
         </div>
     </div>
-<!-- 
-    Cards
-<div class="container-fluid" id="container-fluid" >
-    <div class="row" style="justify-content: space-around;">
-        <div class="col-md-3" style="border: 2px solid black; margin: 5px; padding: 5px;">
-            <a href="index.html">
-            <div class="card-component">
-                <img src="cholo.jpg" alt="Card Image" class="card-img-top blur-image">
-                <div class="image-overlay">
-                    <p style="font-weight: bold; text-align: center; text-decoration: none; color: black; " >Invansive Cholestrol Detection </p>
-                </div>
-            </div></a>
-        </div>
-        <div class="col-md-3" style="border: 2px solid black; margin: 5px; padding: 5px;">
-            <a href="index.html">
-            <div class="card-component">
-                <img src="research.jpg" alt="Card Image" class="card-img-top blur-image">
-                <div class="image-overlay">
-                    <p style="font-weight: bold; text-align: center; text-decoration: none; color: black; " >Invansive Cholestrol Detection </p>
-                </div>
-            </div></a>
-        </div>
-        <div class="col-md-3" style="border: 2px solid black; margin: 5px; padding: 5px;">
-            <a href="index.html">
-            <div class="card-component">
-                <img src="cholo.jpg" alt="Card Image" class="card-img-top blur-image" >
-                <div class="image-overlay">
-                    <p style="font-weight: bold; text-align: center; text-decoration: none; color: black; " >Invansive Cholestrol Detection </p>
-                </div>
-            </div></a>
-        </div>
-      
-    </div>
-</div> -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script><script>
+    <h2 style="font-weight: bold; text-align: center; margin: 50px;" >Market Research</h2>
+    <section id="market-research">
+      <div class="research-boxes">
+          <div class="research-box">
+              <h6>Non-Invasive Cholesterol Detection Machines by Country</h6>
+              <canvas id="throughputChart" width="100%"  ></canvas>
+
+          </div>
+          <div class="research-box">
+              <h6>Comparison of Cholesterol Detection Methods</h6>
+              <img src="Data.png" alt="" width="100%" height="90%">
+          </div>
+          <div class="research-box">
+              <h6>The market segmentation of non-invasive cholesterol detection devices</h6>
+                            <img src="device.webp" alt="" width="100%" height="90%">
+
+          </div>
+      </div>
+    </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    
+
+    <script>
 
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -566,6 +555,59 @@ var  myChart = new Chart(myChartCanvas, {
 });
         
         </script>
-        </body>
+       <script>
+        var ctx5 = document.getElementById('throughputChart').getContext('2d');
+      
+        var data2 = {
+            labels: [
+                'United States',
+                'Germany',
+                'Japan',
+                'South Korea',
+                'China',
+                'France',
+                'United Kingdom',
+                'Israel'
+            ],
+            datasets: [{
+                label: 'Throughput',
+                data: [20, 30, 40, 20, 30, 40, 20, 30],
+                backgroundColor: [
+                    'rgba(255, 127, 0, 0.2)', // Orange
+                    'rgba(0, 128, 0, 0.2)', // Green
+                    'rgba(0, 0, 255, 0.2)', // Blue
+                    'rgba(255, 0, 0, 0.2)', // Red
+                    'rgba(255, 255, 0, 0.2)', // Yellow
+                    'rgba(128, 0, 128, 0.2)', // Purple
+                    'rgba(128, 128, 128, 0.2)', // Gray
+                    'rgba(0, 0, 0, 0.2)' // Black
+                ],
+                borderColor: [
+                    'rgba(255, 127, 0, 1)', // Orange
+                    'rgba(0, 128, 0, 1)', // Green
+                    'rgba(0, 0, 255, 1)', // Blue
+                    'rgba(255, 0, 0, 1)', // Red
+                    'rgba(255, 255, 0, 1)', // Yellow
+                    'rgba(128, 0, 128, 1)', // Purple
+                    'rgba(128, 128, 128, 1)', // Gray
+                    'rgba(0, 0, 0, 1)' // Black
+                ],
+                borderWidth: 1
+            }]
+        };
+      
+        var options2 = {
+            title: {
+                display: true,
+                text: 'Non-Invasive Cholesterol Detection Machines by Country'
+            }
+        };
+      
+        var throughputChart = new Chart(ctx5, {
+            type: 'pie',
+            data: data2,
+            options: options2
+        });
+      </script>
 </body>
 </html>

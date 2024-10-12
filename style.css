@@ -61,3 +61,37 @@ th,td{
     background-color:grey;
     padding: 30px;
 }
+#market-research {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.research-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.research-box {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1; /* Ensure boxes take up equal space */
+}
+
+.research-box h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.research-box ul {
+    margin: 0;
+    padding: 0;
+}
+
+.research-box ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
